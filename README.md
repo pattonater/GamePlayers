@@ -4,7 +4,7 @@ So I guess this can be a git repository for anything we do with trying to make g
 
 
 Games in Repo:
-1. Pick a Number
+- Pick a Number
 
 
 Games to Work On:
