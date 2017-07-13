@@ -1,7 +1,8 @@
 // (c) Ryan Patton
 
-import scala.actors.Actor;
-import Actor._;
+//import scala.actors.Actor;
+//import Actor._;
+import akka.actor._
 
 // Game object for this simple 'Pick a Number' game, where players try to guess the right number
 class Game(num : Int) extends Actor {

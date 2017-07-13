@@ -1,11 +1,16 @@
 // (c) Ryan Patton
 
-import scala.actors.Actor;
-import Actor._;
+//import scala.actors.Actor;
+//import Actor._;
+import akka.actor._;
+import akka.routing.RoundRobinRouter
+import akka.util.Duration
+import akka.util.duration._
+
 import scala.util.Random;
 
 // Messages for players and games defined here 
-abstract class Message;
+sealed trait Message;
 case object Stop extends Message;
 
 abstract class PlayerMessage extends Message;
@@ -20,7 +25,7 @@ case class Greeting(p : Player, id : String) extends GameMessage;
 
 // Superclass for 'Dumb' and 'Smart' players so they can both be referred to as 'Player' objects
 class Player() extends Actor() {
-  def act {}
+  def recieve {}
   start()
 }
 
