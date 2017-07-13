@@ -5,7 +5,8 @@ import Actor._;
 
 // Game object for this simple 'Pick a Number' game, where players try to guess the right number
 class Game(num : Int) extends Actor {
-  // maintains list of connected players
+
+  // Maintains list of connected players
   var players = List[Player]();
 
   def act = {
